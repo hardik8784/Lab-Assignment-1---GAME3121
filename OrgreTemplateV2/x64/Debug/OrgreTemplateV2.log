@@ -1,4 +1,4 @@
-﻿  week5-7-PrefabTypeDemo.cpp
+﻿  Lab Assignment 1 - 101249099.cpp
 H:\GameEngineDevelopment\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\Include\OgreAxisAlignedBox.h(66,25): warning C4251: 'Ogre::AxisAlignedBox::mMinimum': class 'Ogre::Vector<3,Ogre::Real>' needs to have dll-interface to be used by clients of class 'Ogre::AxisAlignedBox'
 H:\GameEngineDevelopment\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\Include\OgrePrerequisites.h(254): message : see declaration of 'Ogre::Vector<3,Ogre::Real>'
 H:\GameEngineDevelopment\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\Include\OgreAxisAlignedBox.h(67,25): warning C4251: 'Ogre::AxisAlignedBox::mMaximum': class 'Ogre::Vector<3,Ogre::Real>' needs to have dll-interface to be used by clients of class 'Ogre::AxisAlignedBox'
@@ -517,4 +517,5 @@ H:\GameEngineDevelopment\GameEngineDevelopment\ogre-sdk-v2.1\Components\Bites\In
 H:\GameEngineDevelopment\GameEngineDevelopment\ogre-sdk-v2.1\Components\Bites\Include\OgreTrays.h(189): message : see declaration of 'std::vector<OgreBites::Widget *,std::allocator<OgreBites::Widget *>>'
 H:\GameEngineDevelopment\GameEngineDevelopment\ogre-sdk-v2.1\Components\Bites\Include\OgreTrays.h(1198,33): warning C4251: 'OgreBites::TrayManager::mCursorPos': class 'Ogre::Vector<2,Ogre::Real>' needs to have dll-interface to be used by clients of class 'OgreBites::TrayManager'
 H:\GameEngineDevelopment\GameEngineDevelopment\ogre-sdk-v2.1\OgreMain\Include\OgrePrerequisites.h(252): message : see declaration of 'Ogre::Vector<2,Ogre::Real>'
+H:\Lab Assignment 1 - GAME3121\OrgreTemplateV2\Lab Assignment 1 - 101249099.cpp(74,14): warning C4305: 'initializing': truncation from 'double' to 'float'
   OrgreTemplateV2.vcxproj -> H:\Lab Assignment 1 - GAME3121\OrgreTemplateV2\x64\Debug\OrgreTemplateV2.exe

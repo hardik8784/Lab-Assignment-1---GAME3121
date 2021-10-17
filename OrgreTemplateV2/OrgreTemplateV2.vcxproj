@@ -19,7 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="week5-7-PrefabTypeDemo.cpp" />
+    <ClCompile Include="Ball.cpp" />
+    <ClCompile Include="Bat.cpp" />
+    <ClCompile Include="Lab Assignment 1 - 101249099.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Ball.h" />
+    <ClInclude Include="Bat.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
