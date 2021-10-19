@@ -94,7 +94,7 @@ public:
 
 
 Game::Game()
-    : ApplicationContext("Assignment 1")
+    : ApplicationContext("Lab Assignment 1 - 101249099")
 {
     Score = 0;
     Lives = 3;
