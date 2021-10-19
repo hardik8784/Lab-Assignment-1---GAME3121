@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Lab Assignment 1 - 101249099.cpp" />
     <ClCompile Include="Ball.cpp" />
+    <ClCompile Include="Lab Assignment 1 - 101249099.cpp" />
     <ClCompile Include="Bat.cpp" />
   </ItemGroup>
   <ItemGroup>
