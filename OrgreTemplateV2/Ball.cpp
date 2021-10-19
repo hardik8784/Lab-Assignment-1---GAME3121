@@ -4,61 +4,77 @@ Ball::Ball()
 {
 }
 
-Ball::Ball(Ogre::Entity* BallEntity, Ogre::SceneManager* SceneManager)
+Ball::Ball(Ogre::Entity* Entity, Ogre::SceneManager* SceneManager)
 {
-    BallNode = SceneManager->getRootSceneNode()->createChildSceneNode();
-    BallNode->setPosition(0, -40, 0);
-    BallNode->setScale(0.2f,0.2f, 0.2f);
+	BallNode = SceneManager->getRootSceneNode()->createChildSceneNode();
+	int v1 = rand() % 100;
+	BallNode->setPosition(v1, 100, 0);
+	BallNode->setScale(0.1f, 0.1f, 0.1f);
 
+	BallNode->attachObject(Entity);
+	reset();
+	
+	Position = BallNode->getPosition();
+	
 }
 
 Ball::~Ball()
 {
 }
 
-Ogre::Vector3 Ball::getPosition()
-{
-    return Position;
+void Ball::reset() {
+	VelocityonY = 1;
+
+	VelocityonX = 0;
+	int v1 = rand() % 100;
+	BallTranslate = Ogre::Vector3(v1, 100, 0);
 }
 
-void Ball::SetPosition(Ogre::Vector3 pos)
+Ogre::Vector3 Ball::getPosition()
 {
-    Position = pos;
+	return Position;
+}
+
+void Ball::setPosition(Ogre::Vector3 Position)
+{
+	Position = Position;
 }
 
 Ogre::SceneNode* Ball::getShape()
 {
-    return BallNode;
+	return BallNode;
 }
 
 Ogre::int32 Ball::getVelocityonX()
 {
-    return VelocityonX;
+	return VelocityonX;
 }
 
-void Ball::setVelocityonX(Ogre::int32 VelocityonX)
+void Ball::setVelocityonX(Ogre::int32 x)
 {
-    VelocityonX = VelocityonX;
-}
-
-void Ball::setVelocityonY(Ogre::int32 VelocityonY)
-{
-    VelocityonY = VelocityonY;
+	VelocityonX = x;
 }
 
 Ogre::int32 Ball::getVelocityonY()
 {
-    return VelocityonY;
+	return VelocityonY;
+}
+
+void Ball::setVelocityonY(Ogre::int32 y)
+{
+	VelocityonY = y;
 }
 
 void Ball::update(const Ogre::FrameEvent& Event)
 {
-    /*BallTranslate = Ogre::Vector3(-10 * VelocityonX, -10 * VelocityonY, 0);
+	BallTranslate = Ogre::Vector3(-50 * VelocityonX, -50 * VelocityonY, 0);
+
     if (BallNode->getPosition().y > 135)
     {
         VelocityonY = 1;
     }
-    if (BallNode->getPosition().y > 112)
+    
+    if (BallNode->getPosition().x > 112)
     {
         VelocityonX = 1;
     }
@@ -66,13 +82,5 @@ void Ball::update(const Ogre::FrameEvent& Event)
     {
         VelocityonX = -1;
     }
-
-    BallNode->translate(BallTranslate * Event.timeSinceLastFrame);*/
-}
-
-void Ball::reset()
-{
-    VelocityonY = 1;
-    VelocityonX = 0;
-    BallTranslate = Ogre::Vector3(0, 0, 0);
+	BallNode->translate(BallTranslate * Event.timeSinceLastFrame);
 }

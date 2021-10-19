@@ -1,0 +1,200 @@
+\hypertarget{class_ball}{}\doxysection{Ball Class Reference}
+\label{class_ball}\index{Ball@{Ball}}
+
+
+Class for the behaviour of the \mbox{\hyperlink{class_ball}{Ball}}  
+
+
+
+
+{\ttfamily \#include $<$Ball.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ball_a86a144d3dad6c953e422e32435923bbb}{Ball}} ()
+\item 
+\mbox{\hyperlink{class_ball_a7ac47d412fc9ac10c72b6763291e5c89}{Ball}} (Ogre\+::\+Entity $\ast$Ball\+Entity, Ogre\+::\+Scene\+Manager $\ast$Scene\+Manager)
+\begin{DoxyCompactList}\small\item\em Constructor of the \mbox{\hyperlink{class_ball}{Ball}} Class \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ball_a20f2f6ac0bf648f406a8e12e63429fcd}{$\sim$\+Ball}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+Ogre\+::\+Vector3 \mbox{\hyperlink{class_ball_a615bfe7efa7759dafe285ee03faf8c09}{get\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Can get the position of the \mbox{\hyperlink{class_ball}{Ball}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ball_a316dd7bc434ad0d3ca78188375e839f3}{set\+Position}} (Ogre\+::\+Vector3)
+\item 
+Ogre\+::\+Scene\+Node $\ast$ \mbox{\hyperlink{class_ball_ae4fda7a5318aae2d1805e8db1574cc6f}{get\+Shape}} ()
+\begin{DoxyCompactList}\small\item\em Can get the Shape of the \mbox{\hyperlink{class_ball}{Ball}}. \end{DoxyCompactList}\item 
+Ogre\+::int32 \mbox{\hyperlink{class_ball_a8878feb60a3c2e3f953a8d0c5cd41e67}{get\+VelocityonX}} ()
+\begin{DoxyCompactList}\small\item\em Can get the Velocity on x-\/axis of the \mbox{\hyperlink{class_ball}{Ball}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ball_a21b8910e7d00b57fd7e680964f98778c}{set\+VelocityonX}} (Ogre\+::int32 x)
+\item 
+void \mbox{\hyperlink{class_ball_a9aad63797ab4a50d0013b7dfbf33c53b}{set\+VelocityonY}} (Ogre\+::int32 y)
+\item 
+Ogre\+::int32 \mbox{\hyperlink{class_ball_a8b2f4dbe83b46f96789a55159a5064e5}{get\+VelocityonY}} ()
+\item 
+void \mbox{\hyperlink{class_ball_a50f003b19f425d46bb3aae5c2e2346df}{update}} (const Ogre\+::\+Frame\+Event \&evt)
+\begin{DoxyCompactList}\small\item\em Update everyframe Function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ball_ad51eef8304541159f12dee1f1674ec90}{reset}} ()
+\begin{DoxyCompactList}\small\item\em Reset the \mbox{\hyperlink{class_ball}{Ball}} position and attributes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Ogre\+::\+Vector3 \mbox{\hyperlink{class_ball_a770483b9a94b0085c175a2cb008d5ac7}{Ball\+Translate}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class for the behaviour of the \mbox{\hyperlink{class_ball}{Ball}} 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_ball_a86a144d3dad6c953e422e32435923bbb}\label{class_ball_a86a144d3dad6c953e422e32435923bbb}} 
+\index{Ball@{Ball}!Ball@{Ball}}
+\index{Ball@{Ball}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{Ball()}{Ball()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Ball\+::\+Ball (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_ball_a7ac47d412fc9ac10c72b6763291e5c89}\label{class_ball_a7ac47d412fc9ac10c72b6763291e5c89}} 
+\index{Ball@{Ball}!Ball@{Ball}}
+\index{Ball@{Ball}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{Ball()}{Ball()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Ball\+::\+Ball (\begin{DoxyParamCaption}\item[{Ogre\+::\+Entity $\ast$}]{Ball\+Entity,  }\item[{Ogre\+::\+Scene\+Manager $\ast$}]{Scene\+Manager }\end{DoxyParamCaption})}
+
+
+
+Constructor of the \mbox{\hyperlink{class_ball}{Ball}} Class 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Ball\+Entity} & \\
+\hline
+\end{DoxyParams}
+A reference to the Entity we want to use 
+\begin{DoxyParams}{Parameters}
+{\em Scene\+Manager} & \\
+\hline
+\end{DoxyParams}
+A reference to the Scene Manager \mbox{\Hypertarget{class_ball_a20f2f6ac0bf648f406a8e12e63429fcd}\label{class_ball_a20f2f6ac0bf648f406a8e12e63429fcd}} 
+\index{Ball@{Ball}!````~Ball@{$\sim$Ball}}
+\index{````~Ball@{$\sim$Ball}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{$\sim$Ball()}{~Ball()}}
+{\footnotesize\ttfamily Ball\+::$\sim$\+Ball (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & parameters \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ball_a615bfe7efa7759dafe285ee03faf8c09}\label{class_ball_a615bfe7efa7759dafe285ee03faf8c09}} 
+\index{Ball@{Ball}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily Ogre\+::\+Vector3 Ball\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Can get the position of the \mbox{\hyperlink{class_ball}{Ball}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & parameters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the position as an Ogre\+::\+Vector3 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_ball_ae4fda7a5318aae2d1805e8db1574cc6f}\label{class_ball_ae4fda7a5318aae2d1805e8db1574cc6f}} 
+\index{Ball@{Ball}!getShape@{getShape}}
+\index{getShape@{getShape}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{getShape()}{getShape()}}
+{\footnotesize\ttfamily Ogre\+::\+Scene\+Node $\ast$ Ball\+::get\+Shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Can get the Shape of the \mbox{\hyperlink{class_ball}{Ball}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & parameters \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_ball_a8878feb60a3c2e3f953a8d0c5cd41e67}\label{class_ball_a8878feb60a3c2e3f953a8d0c5cd41e67}} 
+\index{Ball@{Ball}!getVelocityonX@{getVelocityonX}}
+\index{getVelocityonX@{getVelocityonX}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{getVelocityonX()}{getVelocityonX()}}
+{\footnotesize\ttfamily Ogre\+::int32 Ball\+::get\+VelocityonX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Can get the Velocity on x-\/axis of the \mbox{\hyperlink{class_ball}{Ball}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em no} & parameters \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_ball_a8b2f4dbe83b46f96789a55159a5064e5}\label{class_ball_a8b2f4dbe83b46f96789a55159a5064e5}} 
+\index{Ball@{Ball}!getVelocityonY@{getVelocityonY}}
+\index{getVelocityonY@{getVelocityonY}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{getVelocityonY()}{getVelocityonY()}}
+{\footnotesize\ttfamily Ogre\+::int32 Ball\+::get\+VelocityonY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_ball_ad51eef8304541159f12dee1f1674ec90}\label{class_ball_ad51eef8304541159f12dee1f1674ec90}} 
+\index{Ball@{Ball}!reset@{reset}}
+\index{reset@{reset}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Ball\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reset the \mbox{\hyperlink{class_ball}{Ball}} position and attributes. 
+
+\mbox{\Hypertarget{class_ball_a316dd7bc434ad0d3ca78188375e839f3}\label{class_ball_a316dd7bc434ad0d3ca78188375e839f3}} 
+\index{Ball@{Ball}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
+{\footnotesize\ttfamily void Ball\+::set\+Position (\begin{DoxyParamCaption}\item[{Ogre\+::\+Vector3}]{Position }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_ball_a21b8910e7d00b57fd7e680964f98778c}\label{class_ball_a21b8910e7d00b57fd7e680964f98778c}} 
+\index{Ball@{Ball}!setVelocityonX@{setVelocityonX}}
+\index{setVelocityonX@{setVelocityonX}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{setVelocityonX()}{setVelocityonX()}}
+{\footnotesize\ttfamily void Ball\+::set\+VelocityonX (\begin{DoxyParamCaption}\item[{Ogre\+::int32}]{x }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_ball_a9aad63797ab4a50d0013b7dfbf33c53b}\label{class_ball_a9aad63797ab4a50d0013b7dfbf33c53b}} 
+\index{Ball@{Ball}!setVelocityonY@{setVelocityonY}}
+\index{setVelocityonY@{setVelocityonY}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{setVelocityonY()}{setVelocityonY()}}
+{\footnotesize\ttfamily void Ball\+::set\+VelocityonY (\begin{DoxyParamCaption}\item[{Ogre\+::int32}]{y }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_ball_a50f003b19f425d46bb3aae5c2e2346df}\label{class_ball_a50f003b19f425d46bb3aae5c2e2346df}} 
+\index{Ball@{Ball}!update@{update}}
+\index{update@{update}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Ball\+::update (\begin{DoxyParamCaption}\item[{const Ogre\+::\+Frame\+Event \&}]{evt }\end{DoxyParamCaption})}
+
+
+
+Update everyframe Function. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_ball_a770483b9a94b0085c175a2cb008d5ac7}\label{class_ball_a770483b9a94b0085c175a2cb008d5ac7}} 
+\index{Ball@{Ball}!BallTranslate@{BallTranslate}}
+\index{BallTranslate@{BallTranslate}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{BallTranslate}{BallTranslate}}
+{\footnotesize\ttfamily Ogre\+::\+Vector3 Ball\+::\+Ball\+Translate}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+H\+:/\+Lab Assignment 1 -\/ GAME3121/\+Orgre\+Template\+V2/\mbox{\hyperlink{_ball_8h}{Ball.\+h}}\item 
+H\+:/\+Lab Assignment 1 -\/ GAME3121/\+Orgre\+Template\+V2/\mbox{\hyperlink{_ball_8cpp}{Ball.\+cpp}}\end{DoxyCompactItemize}
